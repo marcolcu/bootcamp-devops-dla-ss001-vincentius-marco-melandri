@@ -18,7 +18,7 @@ npm install / bun install
 npm run src/index.ts / bun src/index.ts
 ```
 
-### Endpoint
+### Endpoint (GET)
 ```bash
 http://localhost:3000/hello
 ```
