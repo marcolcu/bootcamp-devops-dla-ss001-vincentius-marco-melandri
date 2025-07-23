@@ -15,7 +15,7 @@ npm install / bun install
 ## Usage
 
 ```bash
-npm run src/index.ts / bun src/index.ts
+npm run dev / bun dev
 ```
 
 ### Endpoint (GET)
