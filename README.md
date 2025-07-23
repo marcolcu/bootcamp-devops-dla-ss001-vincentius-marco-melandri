@@ -1,5 +1,3 @@
 Hello World
 
-hdfasdfa
-
-haha
+Loh kok di main
