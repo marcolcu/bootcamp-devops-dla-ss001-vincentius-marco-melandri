@@ -4,7 +4,11 @@ This is a simple TypeScript project.
 
 ## Installation
 
-```bash 
+```bash
+npm init / bun init
+```
+
+```bash
 npm install / bun install
 ```
 
