@@ -15,7 +15,7 @@ npm install / bun install
 ## Usage
 
 ```bash
-npm run index.ts / bun index.ts
+npm run src/index.ts / bun src/index.ts
 ```
 
 ### Endpoint
