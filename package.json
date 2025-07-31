@@ -1,38 +1,22 @@
 {
   "name": "devops_training",
-  "module": "src/index.ts",
-  "type": "module",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "tsx src/index.ts",
-    "build": "tsc"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start:be": "npx tsx backend/server.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest",
-    "ts-node": "^10.9.2",
-    "tsx": "^4.20.3"
-  },
-  "peerDependencies": {
-    "typescript": "^5.8.3"
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4"
   },
   "dependencies": {
-    "@types/express": "^5.0.3",
+    "cors": "^2.8.5",
     "express": "^5.1.0"
-  },
-  "version": "1.0.0",
-  "description": "This is a simple TypeScript project.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/marcolcu/devops_training.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/marcolcu/devops_training/issues"
-  },
-  "homepage": "https://github.com/marcolcu/devops_training#readme"
+  }
 }

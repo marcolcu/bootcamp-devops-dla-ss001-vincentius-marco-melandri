@@ -1,13 +1,17 @@
-FROM node:18
+# --- Stage 1: Build Stage ---
+FROM node:18-alpine AS builder
 
 WORKDIR /app
 
-COPY . .
-
+COPY package*.json ./
 RUN npm install
 
+COPY . .
 RUN npm run build
 
-EXPOSE 3000
+# --- Stage 2: Runtime Stage using nginx ---
+FROM nginx:alpine AS runner
 
-CMD ["npm", "run", "dev"]
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+EXPOSE 80
